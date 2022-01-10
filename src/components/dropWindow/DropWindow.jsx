@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import Input from "../input/Input";
-import {useDispatch, useSelector} from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { useRandomId } from "../../hooks/useRandomId";
 import Button from "../button/Button";
-import {ADD_NEW_TODO, WINDOW_OPEN_CLOSE} from "../../redux/todoReducer";
+import { ADD_NEW_TODO, WINDOW_OPEN_CLOSE } from "../../redux/todoReducer";
 
 function DropWindow() {
   const addNewTodo = useSelector((state) => state.todo.addNewTodo);

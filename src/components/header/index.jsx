@@ -1,9 +1,9 @@
 import React from "react";
 import Input from "../input/Input";
-import {useDispatch, useSelector} from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import Button from "../button/Button";
-import {SEARCH_TODO} from "../../redux/todoReducer";
-import {USER_LOG_OUT} from "../../redux/authReducer";
+import { SEARCH_TODO } from "../../redux/todoReducer";
+import { USER_LOG_OUT } from "../../redux/authReducer";
 
 function Header() {
   const dispatch = useDispatch();
