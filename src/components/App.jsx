@@ -3,7 +3,7 @@ import TodoPage from "../pages/TodoPage";
 import AuthPage from "../pages/AuthPage";
 import { Navigate, Route, Routes } from "react-router-dom";
 import Header from "./header";
-import {useSelector} from "react-redux";
+import { useSelector } from "react-redux";
 
 function App() {
   const user = useSelector((state) => state.user.user);

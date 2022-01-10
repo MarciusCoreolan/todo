@@ -1,4 +1,8 @@
-import {USER_AUTH_ERROR, USER_AUTH_START, USER_AUTH_SUCCESSES} from "./authReducer";
+import {
+  USER_AUTH_ERROR,
+  USER_AUTH_START,
+  USER_AUTH_SUCCESSES,
+} from "./authReducer";
 
 export const startLogin = (login, password, navigate) => {
   return async (dispatch) => {
@@ -6,9 +10,9 @@ export const startLogin = (login, password, navigate) => {
       await dispatch({
         type: USER_AUTH_START,
       });
-      const res = await fetch("http://localhost:3001/auth", {
+      const res = await fetch("/auth", {
         method: "POST",
-        body: JSON.stringify({login, password}),
+        body: JSON.stringify({ login, password }),
         headers: { "Content-Type": "application/json" },
       });
       const json = await res.json();

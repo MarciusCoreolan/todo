@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import {useDispatch, useSelector} from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import Todo from "../todo";
 import DropWindow from "../dropWindow/DropWindow";
-import {COMPLETED_TODO, DELETE_TODO} from "../../redux/todoReducer";
+import { COMPLETED_TODO, DELETE_TODO } from "../../redux/todoReducer";
 
 function Main() {
   const dispatch = useDispatch();
