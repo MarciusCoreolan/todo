@@ -1,8 +1,8 @@
 import React from "react";
 
-function Todo({ todo, handleDelete, handleCompleted }) {
+function Todo({ todo, handleDelete, handleCompleted, delAnim }) {
   return (
-    <li className={"todo__item"} draggable={true}>
+    <li className={`todo__item ${delAnim === todo.id && "todo_delete"}`}>
       <div className={`todo__text ${todo.completed && "todo__complete"}`}>
         {todo.todoText}
       </div>
@@ -16,7 +16,7 @@ function Todo({ todo, handleDelete, handleCompleted }) {
         />
         <button
           className="material-icons todo__button"
-          onClick={() => handleDelete(todo.todoText)}
+          onClick={() => handleDelete(todo.id)}
         >
           delete_forever
         </button>

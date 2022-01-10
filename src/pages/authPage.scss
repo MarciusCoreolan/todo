@@ -1,0 +1,25 @@
+.auth__page__authorization {
+  width: 500px;
+  height: 400px;
+  background-color: #455f9a;
+  margin: auto;
+  border-radius: 0 0 50px 50px;
+  padding: 150px 20px;
+  .authorization__container {
+    width: 80%;
+    margin: auto;
+    position: relative;
+    text-align: center;
+
+    input {
+      margin-bottom: 35px;
+    }
+    .error {
+      font-size: 20px;
+      color: #ff4d4d;
+      position: absolute;
+      bottom: 50px;
+      left: 70px;
+    }
+  }
+}

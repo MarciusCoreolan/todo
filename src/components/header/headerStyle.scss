@@ -12,6 +12,10 @@ header {
   position: fixed;
   margin-bottom: 40px;
 
+  .button {
+    margin-left: 10px;
+    padding: 5px 15px;
+  }
   .wrapper {
     display: flex;
     align-items: center;
