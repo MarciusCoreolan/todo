@@ -13,6 +13,7 @@
 html,
 scss,
 js,
+react,
 redux,
 react-redux,
 redux-thunk,
