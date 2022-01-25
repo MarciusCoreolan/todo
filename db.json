@@ -3,7 +3,7 @@
     {
       "id": 1,
       "login": "user",
-      "password": "1"
+      "password": 1
     }
   ]
 }
