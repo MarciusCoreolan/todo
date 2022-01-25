@@ -24,7 +24,7 @@ function AuthPage() {
           <div className={"input__pass"}>
             <Input
               type={"password"}
-              holder={'1'}
+              holder={'password'}
               onChange={setPass}
               value={pass}
             />
