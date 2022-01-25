@@ -19,12 +19,12 @@ function AuthPage() {
       <div className={"auth__page__authorization"}>
         <div className={"authorization__container"}>
           <div className={"input__login"}>
-            <Input holder={"user"} onChange={setLogin} value={login} />
+            <Input holder={"Логин"} onChange={setLogin} value={login} />
           </div>
           <div className={"input__pass"}>
             <Input
               type={"password"}
-              holder={'1'}
+              holder={"Пароль"}
               onChange={setPass}
               value={pass}
             />
